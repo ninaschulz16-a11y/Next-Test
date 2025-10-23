@@ -11,8 +11,8 @@ export default async function Postagem({ params }) {
     return (
         <div>
             {postagem.map((postagem)=> (
-                <div>
-                    <h2 key={postagem.id}>{postagem.title}</h2>
+                <div key={postagem.id}>
+                    <h2 >{postagem.title}</h2>
                     <p>{postagem.content}</p>
                     </div>
             ))}
